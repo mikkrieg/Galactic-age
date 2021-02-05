@@ -14,6 +14,6 @@ describe('User', () => {
 
   test('should calculate a users age and life expectancy on mercury', () => {
     expect(reusableUser.mercury()).toEqual(104);
-    expect(reusableUser.mercury()).toEqual(80);
+    expect(reusableUser.mercury()).toEqual(333);
   });
 });
