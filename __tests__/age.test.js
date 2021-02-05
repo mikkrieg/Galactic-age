@@ -46,5 +46,4 @@ describe('User', () => {
     oldUser.yearsDead();
     expect(oldUser.yearsDead).toEqual(20);
   });
-
 });
