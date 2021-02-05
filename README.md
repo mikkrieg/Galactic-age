@@ -1,6 +1,6 @@
-# (Application Name)
+# Super Galactic Age Calculator
 
-#### (Brief Description of Application)
+#### Calculates age, life expectancy, years left to live and years dead on different planets
 
 #### By Mikey Kriegel
 
@@ -16,6 +16,7 @@
 * _Jest_
 
 ## Description
+This is a program that calculates a users age, life expectancy, years left to live and years dead on different planets. A user inputs their age and avg life expectancy. The program takes these values and creates user objects. There are four prototypes: mercury, venus, mars and jupiter. These take in the age and life expectancy that is present in a user object and reassign the age and life expectancy. 
 
 ## Setup/Installation Requirements
 
@@ -28,8 +29,7 @@
 
 ## Known Bugs
 
-* _Any known issues_
-* _should go here_
+* _No Known Bugs_
 
 ## License
 
