@@ -47,4 +47,8 @@ describe('User', () => {
     oldUser.yearsDead();
     expect(oldUser.yearsDead).toEqual(20);
   });
+
+  test('should calculate a users birthday on different planets', () => {
+    expect(reusableUser.birthday).toEqual(x);
+  });
 });

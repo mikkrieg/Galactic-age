@@ -32,4 +32,8 @@ export class User{
   yearsDead(){
     this.yearsDead = this.age - this.lifeE; 
   }
+
+  spaceBirthday(){
+    
+  }
 }
