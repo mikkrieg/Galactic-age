@@ -9,10 +9,10 @@ export class User{
     this.lifeE = Math.trunc(this.lifeE / 0.24)
     if(this.age <= this.lifeE){
       this.lifeLeft =  this.lifeE - this.age;
-    } else { 
+    }
+    if(this.age >= this.lifeE){
       this.yearsDead = this.age - this.lifeE;
     }
-    return this.age, this.lifeE;
   }
 
 
