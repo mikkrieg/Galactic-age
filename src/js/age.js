@@ -10,7 +10,8 @@ export class User{
   }
 
   venus(){
-    
+    this.age = Math.trunc(this.age / 0.62);
+    this.lifeE = Math.trunc(this.lifeE / 0.62);
   }
 
 
