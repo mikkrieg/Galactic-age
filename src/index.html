@@ -8,37 +8,45 @@
 <body>
   <div class="container">
     <h1 class="jumbotron text-center">Super Galactic Age Calculator</h1>
-    <form>
-      <label for="age">
-        Please enter your age:
-        <input id="age" name="user-age" type="number" class="form-control" required>
-      </label>
-      <br/>
-      <br/>
-      <label for="life-exp">
-        Please enter your life expectancy:
-        <input id="life-exp" name="life-exp" type="number" class="form-control" required>
-      </label>
-      <br/>
-      <br/>
-      <select required>
-        <option></option>
-        <option>Mercury</option>
-        <option>Venus</option>
-        <option>Mars</option>
-        <option>Jupiter</option>
-      </select>
-      <br/>
-      <br/>
-      <button type="submit" class="btn btn-primary">Submit!</button>
-    </form>
+    <div class="row">
+      <div class="col-md-12">
+        <form>
+          <label for="age">
+            Please enter your age:
+            <input id="age" name="user-age" type="number" class="form-control" required>
+          </label>
+          <br/>
+          <br/>
+          <label for="life-exp">
+            Please enter your life expectancy:
+            <input id="life-exp" name="life-exp" type="number" class="form-control" required>
+          </label>
+          <br/>
+          <br/>
+          <label for="planets">
+            Pick a planet!
+            <br/>
+            <select id="planets" required>
+              <option></option>
+              <option>Mercury</option>
+              <option>Venus</option>
+              <option>Mars</option>
+              <option>Jupiter</option>
+            </select>
+          </label>
+          <br/>
+          <br/>
+          <button type="submit" class="btn btn-light" id="submit">Submit!</button>
+        </form>
+      </div>
+    </div>
     <br/>
     <br/>
     <div class="card" id="output-card">
       <div class="card-title">
         <div class="card-body">
           <div class="card-text">
-            <div id="output">
+            <div id="output" class="text-center">
 
             </div>
           </div>
