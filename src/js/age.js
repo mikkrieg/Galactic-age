@@ -3,4 +3,12 @@ export class User{
     this.age = age;
     this.lifeE = lifeE;
   }
-}
+
+  mercury(){
+    
+  }
+
+
+
+
+};

@@ -9,5 +9,11 @@ describe('User', () => {
 
   test('should create a user object', () => {
     expect(reusableUser.age).toEqual(25);
-  })
+    expect(reusableUser.lifeE).toEqual(80);
+  });
+
+  test('should calculate a users age and life expectancy on mercury', () => {
+    expect(reusableUser.mercury()).toEqual(104);
+    expect(reusableUser.mercury()).toEqual(80);
+  });
 });
