@@ -14,6 +14,7 @@ $(document).ready(function(){
 
     if(userPlanet === 'Mercury'|| userPlanet === 'Venus' || userPlanet === 'Mars' || userPlanet === 'Jupiter'){
       user[userPlanet.toLowerCase()]();
+      $('div#output-card').show();
       if(user.age <= user.lifeE){
         user.yearsLeft()
         $('div#output').text(`You picked: ${userPlanet}, on ${userPlanet} you would be ${user.age} ${userPlanet} years old and your life expectancy would be ${user.lifeE} ${userPlanet} years! You would have ${user.yearsLeft} years left to live on ${userPlanet}!`);

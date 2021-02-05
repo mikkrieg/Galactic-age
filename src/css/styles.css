@@ -1,0 +1,14 @@
+/* Element Styling */
+body {
+  background-image: linear-gradient(to right, #000, #733594, #000);
+  color: #fff;
+}
+
+h1 {
+  color: #000;
+}
+/* Class Styling */
+/* ID styling */
+#output-card {
+  display: none;
+}
