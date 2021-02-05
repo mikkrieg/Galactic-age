@@ -32,16 +32,3 @@ export class User{
     this.yearsDead = this.age - this.lifeE; 
   }
 }
-
-let newUser = new User(25, 100)
-newUser.mars();
-console.log(newUser);
-newUser.yearsLeft();
-console.log(newUser);
-
-// if(this.age <= this.lifeE){
-//   this.lifeLeft =  this.lifeE - this.age;
-// }
-// if(this.age >= this.lifeE){
-//   this.yearsDead = this.age - this.lifeE;
-// }
