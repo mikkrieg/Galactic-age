@@ -1,7 +1,7 @@
 /* Element Styling */
 body {
   font-size: 1.2em;
-  background-image: linear-gradient(to right, #000, #733594, #000);
+  background-image: linear-gradient(to right, #000, #000, #733594, #000, #000);
   color: #fff;
 }
 
@@ -22,10 +22,15 @@ form{
 
 /* Class Styling */
 .card{
-  background-color: #733594;
+  background-color: #a3a3a3;
+  color: #000;
   width: 50%;
   display: block;
   margin: auto;
+}
+
+.jumbotron {
+  background-color: #a3a3a3;
 }
 /* ID styling */
 #output-card {
