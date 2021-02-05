@@ -13,15 +13,13 @@
         <form>
           <label for="age">
             Please enter your age:
-            <input id="age" name="user-age" type="number" class="form-control" required>
+            <input id="age" name="user-age" type="number" class="form-control" min=1 required>
           </label>
-          <br/>
           <br/>
           <label for="life-exp">
             Please enter your life expectancy:
-            <input id="life-exp" name="life-exp" type="number" class="form-control" required>
+            <input id="life-exp" name="life-exp" type="number" class="form-control" min=1 required>
           </label>
-          <br/>
           <br/>
           <label for="planets">
             Pick a planet!
@@ -34,7 +32,6 @@
               <option>Jupiter</option>
             </select>
           </label>
-          <br/>
           <br/>
           <button type="submit" class="btn btn-light" id="submit">Submit!</button>
         </form>
