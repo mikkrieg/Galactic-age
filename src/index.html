@@ -3,16 +3,42 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Haiku</title>
+  <title>Galactic Age</title>
 </head>
 <body>
   <div class="container">
+    <h1 class="jumbotron text-center">Super Galactic Age Calculator</h1>
     <form>
       <label for="age">
         Please enter your age:
-        <input id="age" name="age" type="text" class="form-control">
+        <input id="age" name="user-age" type="text" class="form-control">
       </label>
+      <br/>
+      <label for="life-exp">
+        Please enter your life expectancy:
+        <input id="life-exp" name="life-exp" type="text" class="form-control">
+      </label>
+      <br/>
+      <select>
+        <option></option>
+        <option>Mercury</option>
+        <option>Venus</option>
+        <option>Mars</option>
+        <option>Jupiter</option>
+      </select>
     </form>
+    <br/>
+    <div class="card">
+      <div class="card-title">
+        <div class="card-body">
+          <div class="card-text">
+            <div id="output">
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
 </body>
 </html>
