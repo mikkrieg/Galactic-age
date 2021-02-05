@@ -17,4 +17,11 @@ describe('User', () => {
     expect(reusableUser.age).toEqual(104);
     expect(reusableUser.lifeE).toEqual(333);
   });
+
+  test('should calculate a users age and life expectancy on venus', () => {
+    // reusableUser.mercury();
+    expect(reusableUser.age).toEqual(40);
+    expect(reusableUser.lifeE).toEqual(129);
+  });
+
 });

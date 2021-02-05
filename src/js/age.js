@@ -6,16 +6,22 @@ export class User{
 
   mercury(){
     this.age = Math.trunc(this.age / 0.24);
-    this.lifeE = Math.trunc(this.lifeE / 0.24)
-    if(this.age <= this.lifeE){
-      this.lifeLeft =  this.lifeE - this.age;
-    }
-    if(this.age >= this.lifeE){
-      this.yearsDead = this.age - this.lifeE;
-    }
+    this.lifeE = Math.trunc(this.lifeE / 0.24);
+  }
+
+  venus(){
+    
   }
 
 
 
 
-};
+}
+
+
+// if(this.age <= this.lifeE){
+//   this.lifeLeft =  this.lifeE - this.age;
+// }
+// if(this.age >= this.lifeE){
+//   this.yearsDead = this.age - this.lifeE;
+// }
