@@ -14,6 +14,10 @@ export class User{
     this.lifeE = Math.trunc(this.lifeE / 0.62);
   }
 
+  mars(){
+    
+  }
+
 
 
 

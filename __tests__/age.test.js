@@ -24,4 +24,11 @@ describe('User', () => {
     expect(reusableUser.lifeE).toEqual(129);
   });
 
+  
+  test('should calculate a users age and life expectancy on mars', () => {
+    reusableUser.mars();
+    expect(reusableUser.age).toEqual(47);
+    expect(reusableUser.lifeE).toEqual(150);
+  });
+
 });
