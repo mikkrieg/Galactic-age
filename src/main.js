@@ -9,8 +9,9 @@ $(document).ready(function(){
     e.preventDefault();
     const userAge = $('input#age').val();
     const userLifeE = $('input#life-exp').val();
+    const userBirthday = $('input#birthday').val();
     const userPlanet = $('select').val();
-    let user = new User(userAge, userLifeE);
+    let user = new User(userAge, userLifeE, userBirthday);
 
     if(userPlanet === 'Mercury'|| userPlanet === 'Venus' || userPlanet === 'Mars' || userPlanet === 'Jupiter'){
       user[userPlanet.toLowerCase()]();
