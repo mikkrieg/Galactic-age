@@ -26,7 +26,10 @@ export class User{
 
   yearsLeft(){
     this.yearsLeft = this.lifeE - this.age;
-    console.log(this.yearsleft)
+  }
+
+  yearsDead(){
+    
   }
 
 
