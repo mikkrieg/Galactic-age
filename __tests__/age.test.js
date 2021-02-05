@@ -4,12 +4,13 @@ describe('User', () => {
   let reusableUser;
 
   beforeEach(() => {
-    reusableUser = new User(25, 80);
+    reusableUser = new User(25, 80, '1/2/12');
   });
 
   test('should create a user object', () => {
     expect(reusableUser.age).toEqual(25);
     expect(reusableUser.lifeE).toEqual(80);
+    expect(reusableUser.birthday).toEqual('1/2/12');
   });
 
   test('should calculate a users age and life expectancy on mercury', () => {

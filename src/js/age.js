@@ -1,7 +1,8 @@
 export class User{
-  constructor(age, lifeE){
+  constructor(age, lifeE, birthday){
     this.age = age;
     this.lifeE = lifeE;
+    this.birthday = birthday;
   }
 
   mercury(){
