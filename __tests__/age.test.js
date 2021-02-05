@@ -41,4 +41,10 @@ describe('User', () => {
     expect(reusableUser.yearsLeft).toEqual(55)
   });
 
+  test('should calculate how many years a user has lived past their life expectancy', () => {
+    const oldUser = new User(90, 70);
+    oldUser.yearsDead();
+    expect(oldUser.yearsDead).toEqual(20);
+  });
+
 });
