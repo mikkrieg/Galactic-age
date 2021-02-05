@@ -36,4 +36,8 @@ describe('User', () => {
     expect(reusableUser.lifeE).toEqual(948);
   });
 
+  test('should calculate how many years a user has left to live based on life expectancy', () => {
+    expect(reusableUser.yearsLeft).toEqual(55)
+  });
+
 });
