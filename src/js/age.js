@@ -19,6 +19,10 @@ export class User{
     this.lifeE = Math.trunc(this.lifeE * 1.88);
   }
 
+  jupiter(){
+    
+  }
+
 
 
 
