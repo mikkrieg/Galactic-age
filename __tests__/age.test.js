@@ -48,6 +48,8 @@ describe('User', () => {
   });
 
   test('should calculate how many mayfly lifetimes a user has lived and compare it to the age of the sun', () => {
-    expect(reusableUser.birthday).toEqual(x);
+    reusableUser.mayFly();
+    expect(reusableUser.mayFlyLives).toEqual(2628000);
+    expect(reusableUser.sunComparison).toEqual('0.058');
   });
 });

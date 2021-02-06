@@ -33,6 +33,7 @@ export class User{
   }
 
   mayFly(){
-    this.birthday 
+    this.mayFlyLives = this.age * 105120; 
+    this.sunComparison = ((this.mayFlyLives / 4500000000) * 100).toFixed(3);
   }
 }
