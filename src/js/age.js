@@ -1,8 +1,7 @@
 export class User{
-  constructor(age, lifeE, birthday){
+  constructor(age, lifeE){
     this.age = age;
     this.lifeE = lifeE;
-    this.birthday = birthday;
   }
 
   mercury(){
@@ -33,7 +32,7 @@ export class User{
     this.yearsDead = this.age - this.lifeE; 
   }
 
-  spaceBirthday(){
-    
+  mayFly(){
+    this.birthday 
   }
 }
