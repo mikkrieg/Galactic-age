@@ -18,7 +18,7 @@ $(document).ready(function(){
       $('div#output-card').show();
       if(user.age <= user.lifeE){
         user.yearsLeft()
-        $('div#output1').text(`You picked ${userPlanet}! There you would be ${user.age} ${userPlanet} years old and your life expectancy would be ${user.lifeE} ${userPlanet} years! You would have ${user.yearsLeft} years left to live on ${userPlanet}! If you were a mayfly on earth you would have lived ${user.mayFlyLives} lifetimes, wow! In relation to the suns age in earth years, that would be only ${user.sunComparison}% of its age`);
+        $('div#output1').text(`You picked ${userPlanet}! There you would be ${user.age} ${userPlanet} years old and your life expectancy would be ${user.lifeE} ${userPlanet} years! You would have ${user.yearsLeft} years left to live on ${userPlanet}! If you were a mayfly on earth, you would have lived ${user.mayFlyLives} lifetimes, wow! In relation to the suns age in earth years, that would be only ${user.sunComparison}% of its age`);
       } else {
         user.yearsDead();
         $('div#output1').text(`You picked ${userPlanet}! There you would be ${user.age} ${userPlanet} years old and your life expectancy would be ${user.lifeE} ${userPlanet} years! You would be ${user.yearsDead} years older than your life expectancy on ${userPlanet}! If you were a mayfly on earth, you would have lived ${user.mayFlyLives} mayfly lifetimes, wow! If you turned those lifetimes into earth years and compared them to the age of our sun in earth years, it would only be ${user.sunComparison}% of its age`);
@@ -26,7 +26,7 @@ $(document).ready(function(){
     }
     // Scrolls down to result on smaller screens
     window.scroll({
-      top: 150,
+      top: 210,
       left: 50,
       behavior: 'smooth'
     });
