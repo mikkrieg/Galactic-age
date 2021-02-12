@@ -20,7 +20,6 @@ $(document).ready(function(){
       console.log(messageArray[0]);
       $('p#output1').text(messageArray[0]);
       $('p#output2').text(messageArray[1]);
-      
     }
     // Scrolls down to result on smaller screens
     window.scroll({
