@@ -15,6 +15,12 @@
 * _Bootstrap_
 * _Jest_
 
+### Package Managers
+* _NPM_
+
+### Module Bundlers
+* _Webpack_
+
 ## Description
 This is a program that calculates a users age, life expectancy, years left to live and years dead on different planets. A user inputs their age and avg life expectancy. The program takes these values and creates user objects. There are four prototypes: mercury, venus, mars and jupiter. These take in the age and life expectancy that is present in a user object and reassign the age and life expectancy. As a bonus the program also calculates how many mayfly lifetimes a user has lived based on their planetary age. Then this number is compared the age of the sun to display a percentage. 
 
