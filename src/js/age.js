@@ -35,14 +35,12 @@ export class User{
   deadOrAlive(userPlanet){
     if(this.age <= this.lifeE){
       this.yearsLeft();
-      const message1 = `You picked ${userPlanet}! There you would be ${this.age} ${userPlanet} years old and your life expectancy would be ${this.lifeE} ${userPlanet} years! You would have ${this.yearsLeft} years left to live on ${userPlanet}!`;
-      const message2 = `If you were a mayfly on earth, you would have lived ${this.mayFlyLives} lifetimes, wow! In relation to the suns age in earth years, that would be only ${this.sunComparison}% of its age`;
-      return [message1, message2];
+      this.message1 = `You picked ${userPlanet}! There you would be ${this.age} ${userPlanet} years old and your life expectancy would be ${this.lifeE} ${userPlanet} years! You would have ${this.yearsLeft} years left to live on ${userPlanet}!`;
+      this.message2 = `If you were a mayfly on earth, you would have lived ${this.mayFlyLives} lifetimes, wow! In relation to the suns age in earth years, that would be only ${this.sunComparison}% of its age`;
     } else {
       this.yearsDead();
-      const message1 = `You picked ${userPlanet}! There you would be ${this.age} ${userPlanet} years old and your life expectancy would be ${this.lifeE} ${userPlanet} years! You would be ${this.yearsDead} years older than your life expectancy on ${userPlanet}!`;
-      const message2 = `If you were a mayfly on earth, you would have lived ${this.mayFlyLives} lifetimes, wow! In relation to the suns age in earth years, that would be only ${this.sunComparison}% of its age`;
-      return [message1, message2];
+      this.message1 = `You picked ${userPlanet}! There you would be ${this.age} ${userPlanet} years old and your life expectancy would be ${this.lifeE} ${userPlanet} years! You would be ${this.yearsDead} years older than your life expectancy on ${userPlanet}!`;
+      this.message2 = `If you were a mayfly on earth, you would have lived ${this.mayFlyLives} lifetimes, wow! In relation to the suns age in earth years, that would be only ${this.sunComparison}% of its age`;
     } 
   }
 
