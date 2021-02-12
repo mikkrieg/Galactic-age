@@ -23,9 +23,11 @@ This is a program that calculates a users age, life expectancy, years left to li
 1. Clone this repository to your local machine
 2. Open the top level directory of the project
 3. Make sure npm is installed on your machine
-4. Run "npm install"
-5. Run "npm run build"
-6. Navigate to the dist folder and open index.html in your browser
+4. Run "npm install" in the terminal, this will install everything npm needs for this project
+5. Run "npm run build" in the terminal, this will build the project and create the dist folder
+6. Run "npm run start" in the terminal, this will begin the live dev server to let you view the project
+7. To run any tests with jest, use the terminal command "npm test". This will run a test and display its results in the terminal
+    * If you have the jest extension installed, simply click on the jest icon at the bottom of the screen to see what tests are being ran
 
 ## Known Bugs
 
