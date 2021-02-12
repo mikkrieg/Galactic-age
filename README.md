@@ -26,7 +26,7 @@ This is a program that calculates a users age, life expectancy, years left to li
 
 ## Setup/Installation Requirements
 
-1. Clone or Fork this repository to download it on your local machine
+1. Clone or fork this repository to download it on your local machine
 2. Open the top level directory of the project
 3. Make sure npm is installed on your machine
 4. Run "npm install" in the terminal, this will install everything npm needs for this project
