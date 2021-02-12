@@ -16,15 +16,11 @@ $(document).ready(function(){
       user[userPlanet.toLowerCase()]();
       user.mayFly();
       $('div#output-card').show();
-      if(user.age <= user.lifeE){
-        user.yearsLeft();
-        $('p#output1').text(`You picked ${userPlanet}! There you would be ${user.age} ${userPlanet} years old and your life expectancy would be ${user.lifeE} ${userPlanet} years! You would have ${user.yearsLeft} years left to live on ${userPlanet}!`);
-        $('p#output2').text(`If you were a mayfly on earth, you would have lived ${user.mayFlyLives} lifetimes, wow! In relation to the suns age in earth years, that would be only ${user.sunComparison}% of its age`);
-      } else {
-        user.yearsDead();
-        $('p#output1').text(`You picked ${userPlanet}! There you would be ${user.age} ${userPlanet} years old and your life expectancy would be ${user.lifeE} ${userPlanet} years! You would be ${user.yearsDead} years older than your life expectancy on ${userPlanet}!`);
-        $('p#output2').text(`If you were a mayfly on earth, you would have lived ${user.mayFlyLives} lifetimes, wow! In relation to the suns age in earth years, that would be only ${user.sunComparison}% of its age`);
-      }
+      const messageArray = user.deadOrAlive(userPlanet);
+      console.log(messageArray[0]);
+      $('p#output1').text(messageArray[0]);
+      $('p#output2').text(messageArray[1]);
+      
     }
     // Scrolls down to result on smaller screens
     window.scroll({
