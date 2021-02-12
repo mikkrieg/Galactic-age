@@ -15,11 +15,10 @@ $(document).ready(function(){
     if(userPlanet === 'Mercury'|| userPlanet === 'Venus' || userPlanet === 'Mars' || userPlanet === 'Jupiter'){
       user[userPlanet.toLowerCase()]();
       user.mayFly();
+      user.deadOrAlive(userPlanet);
       $('div#output-card').show();
-      const messageArray = user.deadOrAlive(userPlanet);
-      console.log(messageArray[0]);
-      $('p#output1').text(messageArray[0]);
-      $('p#output2').text(messageArray[1]);
+      $('p#output1').text(user.message1);
+      $('p#output2').text(user.message2);
     }
     // Scrolls down to result on smaller screens
     window.scroll({
