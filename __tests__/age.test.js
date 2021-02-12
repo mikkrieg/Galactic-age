@@ -61,7 +61,7 @@ describe('User', () => {
   });
 
   test('should calculate if a user is past their life expectancy', () => {
-    const userPlanet = 'Venus' || 'Mars' || 'Jupiter';
+    const userPlanet = 'Mercury' || 'Venus' || 'Mars' || 'Jupiter';
     const oldUser = new User(90, 70);
     oldUser.deadOrAlive(userPlanet);
     expect(oldUser.message1).toMatch(`You picked ${userPlanet}! There you would be ${oldUser.age} ${userPlanet} years old and your life expectancy would be ${oldUser.lifeE} ${userPlanet} years! You would be ${oldUser.yearsDead} years older than your life expectancy on ${userPlanet}!`);
