@@ -32,6 +32,20 @@ export class User{
     this.yearsDead = this.age - this.lifeE; 
   }
 
+  deadOrAlive(userPlanet){
+    if(this.age <= this.lifeE){
+      this.yearsLeft();
+      const message1 = `You picked ${userPlanet}! There you would be ${this.age} ${userPlanet} years old and your life expectancy would be ${this.lifeE} ${userPlanet} years! You would have ${this.yearsLeft} years left to live on ${userPlanet}!`;
+      const message2 = `If you were a mayfly on earth, you would have lived ${this.mayFlyLives} lifetimes, wow! In relation to the suns age in earth years, that would be only ${this.sunComparison}% of its age`;
+      return [message1, message2];
+    } else {
+      this.yearsDead();
+      const message1 = `You picked ${userPlanet}! There you would be ${this.age} ${userPlanet} years old and your life expectancy would be ${this.lifeE} ${userPlanet} years! You would be ${this.yearsDead} years older than your life expectancy on ${userPlanet}!`;
+      const message2 = `If you were a mayfly on earth, you would have lived ${this.mayFlyLives} lifetimes, wow! In relation to the suns age in earth years, that would be only ${this.sunComparison}% of its age`;
+      return [message1, message2];
+    } 
+  }
+
   mayFly(){
     this.mayFlyLives = this.age * 105120; 
     this.sunComparison = ((this.mayFlyLives / 4500000000) * 100).toFixed(3);
