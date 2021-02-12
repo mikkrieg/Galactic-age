@@ -43,7 +43,7 @@ This is a program that calculates a users age, life expectancy, years left to li
 
 [MIT](https://opensource.org/licenses/MIT)
 
-Copyright (c) 2021 **_Michael Kriegel_**
+Copyright &copy; 2021 **_Michael Kriegel_**
 
 ## Contact Information
 
