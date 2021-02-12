@@ -17,7 +17,7 @@ $(document).ready(function(){
       user.mayFly();
       $('div#output-card').show();
       if(user.age <= user.lifeE){
-        user.yearsLeft()
+        user.yearsLeft();
         $('p#output1').text(`You picked ${userPlanet}! There you would be ${user.age} ${userPlanet} years old and your life expectancy would be ${user.lifeE} ${userPlanet} years! You would have ${user.yearsLeft} years left to live on ${userPlanet}!`);
         $('p#output2').text(`If you were a mayfly on earth, you would have lived ${user.mayFlyLives} lifetimes, wow! In relation to the suns age in earth years, that would be only ${user.sunComparison}% of its age`);
       } else {
